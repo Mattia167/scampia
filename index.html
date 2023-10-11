@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"
+      title="carta_identita">
+</head>
+<body>
+    <div class="container">
+        <p id="nome"></p>
+        <p id="cognome"></p>
+        <p id="luogo_di_nascita"></p>
+        <p id="sesso"></p>
+        <p id="statura"></p>
+        <p id="cittadinanza"></p>
+        <p id="data_di_nascita"></p>
+        <p id="emissione"></p>
+        <p id="scadenza"></p>
+        
+    </div>
+    
+    <script>
+        fetch('./carta_identita.json')
+        .then((response) => response.json())
+        .then((json) =>{
+
+
+            document.getElementById("nome").innerHTML = json.nome; 
+            document.getElementById("cognome").innerHTML = json.cognome;
+            document.getElementById("luogo_di_nascita").innerHTML = json.luogo_di_nascita;
+            document.getElementById("data_di_nascita").innerHTML = json.data_di_nascita;
+            document.getElementById("sesso").innerHTML = json.sesso;
+            document.getElementById("statura").innerHTML = json.statura;
+            document.getElementById("cittadinanza").innerHTML = json.cittadinanza;
+            document.getElementById("data_di_scadenza").innerHTML = json.data_di_scadenza;
+            document.getElementById("emissione").innerHTML = json.emissione;
+            document.getElementById("scadenza").innerHTML = json.scadenza;
+        
+        })
+    </script>
+
+ 
+</body>
+</html>

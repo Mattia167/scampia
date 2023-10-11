@@ -1,0 +1,12 @@
+{
+  "nome": "Mattia",
+  "cognome": "Casanova",
+  "luogo_di_nascita": "Napoli",
+  "data_di_nascita": "10/01/2006",
+  "sesso": "Maschio",
+  "statura": "170",
+  "cittadinanza":"ITA",
+  "data_di_scadenza": "10/01/2027",
+  "emissione":"28.06.2020",
+  "scadenza": "28.10.2030"
+  }
